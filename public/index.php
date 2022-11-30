@@ -25,6 +25,32 @@ $router->map(
     'main-home'
 );
 
+//* -------------------- CV -------------------- // 
+
+// Route pour l'afichage de la page cv
+$router->map(
+    'GET',
+    '/cv',
+    [
+        'method' => 'cv',
+        'controller' => 'MainController'
+    ],
+    'main-cv'
+);
+
+//* -------------------- PROJETS -------------------- // 
+
+// Route pour l'afichage de la page projet
+$router->map(
+    'GET',
+    '/projet',
+    [
+        'method' => 'projet',
+        'controller' => 'MainController'
+    ],
+    'main-projet'
+);
+
 //* -------------------- TEACHERS -------------------- // 
 
 // Route pour la liste des teachers

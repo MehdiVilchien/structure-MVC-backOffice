@@ -63,7 +63,7 @@ abstract class CoreController
     
         extract($viewData);
        
-        //d(get_defined_vars());
+        d(get_defined_vars());
         //d($_SESSION);
         
         require_once __DIR__ . '/../views/layout/header.tpl.php';

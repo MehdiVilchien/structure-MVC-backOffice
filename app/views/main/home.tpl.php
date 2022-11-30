@@ -7,10 +7,9 @@ $currentUser = $_SESSION['connectedUser'];
     <p class="display-4">
         Bienvenue <?= $currentUser->getName() ?>
     </p>
-<?php else: ?>
+<?php endif; ?>    
     <div class="container my-4">
         <p class="display-5">
-            Bienvenue dans le backOffice <strong>de votre école</strong>...
+            Bienvenue sur mon <strong>portfolio</strong>...
         </p>
     </div>
-<?php endif; ?>
